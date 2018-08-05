@@ -1,0 +1,14 @@
+text = "X-DSPAM-Confidence:    0.8475";
+pos = text.find(' ')
+
+text_new = text[pos:]
+
+#number = text_new.strip()
+#print(text_new)
+
+pos_num = 0
+
+if text_new[pos_num] == '':
+    pos_num = pos_num +1
+
+print(float(text_new[pos_num:]))
